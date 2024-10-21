@@ -265,7 +265,7 @@ const getCurrentUser = asyncHandler ( async (req,res) =>{
     .json(200,req.user,"Current user fetched succesfully")
 })
 
-const updateAccount = asyncHandler(async (req,res) => {
+const updateAccountDetails = asyncHandler(async (req,res) => {
     const {fullName,email} = req.body
 
     if(!fullName || !email){
@@ -487,7 +487,7 @@ export {
     logoutUser,
     changeCurrentPassword,
     getCurrentUser,
-    updateAccount,
+    updateAccountDetails,
     updateUserAvatar,
     updateUserCoverImage,
     getUserChannelProfile,
